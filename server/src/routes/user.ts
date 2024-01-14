@@ -7,7 +7,7 @@ import { UserErrors } from "../error";
 
 const router = Router();
 
-router.post("/required", async (req: Request, res: Response) =>  {
+router.post("/register", async (req: Request, res: Response) =>  {
     const { username, password } = req.body;
 
     
