@@ -37,8 +37,8 @@ const Login = () => {
     } catch (err) {
       let errorMessage: string = "";
       switch (err.response.data.type) {
-        case UserErrors.USERNAME_ALREADY_EXISTS:
-          errorMessage = "User already exists";
+        case UserErrors.NO_USER_FOUND:
+          errorMessage = "User doesn't exists";
           break;
         case UserErrors.WRONG_CREDENTIALS:
           errorMessage = "Wrong username/password combination";
@@ -92,8 +92,8 @@ const Register = () => {
       });
       alert("Registration Completed! Now login.");
     } catch (err) {
-      if (err.response.data.type === UserErrors.NO_USER_FOUND) {
-        alert("ERROR: No user found");
+      if (err.response.data.type === UserErrors.USERNAME_ALREADY_EXISTS) {
+        alert("ERROR: Username exists");
       } else {
         alert("ERROR: Something went wrong");
       }
