@@ -17,6 +17,6 @@ mongoose.connect("mongodb://admin:admin@127.0.0.1:27017/?retryWrites=true&w=majo
 
 
 
-app.listen(5001, () => console.log("SERVER STARTED"));
+app.listen(6500, () => console.log("SERVER STARTED"));
 
 
