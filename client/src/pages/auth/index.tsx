@@ -26,7 +26,7 @@ const Login = () => {
     event.preventDefault();
 
     try {
-      const result = await axios.post("http://localhost:5001/user/login", {
+      const result = await axios.post("http://localhost:6500/user/login", {
         username,
         password,
       });
@@ -86,7 +86,7 @@ const Register = () => {
   const handleSubmit = async (event) => {
     event.preventDefault();
     try {
-      await axios.post("http://localhost:5001/user/register", {
+      await axios.post("http://localhost:6500/user/register", {
         username,
         password,
       });
