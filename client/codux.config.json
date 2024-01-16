@@ -4,12 +4,12 @@
         "install": {
             "title": "Dckr: Install",
             "description": "Run install",
-            "command": "docker exec -w /workspaces/react-wp/client -u node node-dev npm i"
+            "command": "docker exec -w /workspaces/react-wp/client -u node node-dev yarn install"
         },
         "build": {
             "title": "Dckr: Build Project",
             "description": "Builds the project for use",
-            "command": "docker exec -w /workspaces/react-wp/client -u node node-dev npm run build"
+            "command": "docker exec -w /workspaces/react-wp/client -u node node-dev yarn run build"
         },
         "install & build": {
             "title": "Dckr: Initialize Codux",
