@@ -1,0 +1,28 @@
+{  
+    "$schema": "https://wixplosives.github.io/codux-config-schema/codux.config.schema.json",
+    "scripts": {
+        "install": {
+            "title": "Dckr: Install",
+            "description": "Run install",
+            "command": "docker exec -w /workspaces/react-wp/client -u node node-dev npm i"
+        },
+        "build": {
+            "title": "Dckr: Build Project",
+            "description": "Builds the project for use",
+            "command": "docker exec -w /workspaces/react-wp/client -u node node-dev npm run build"
+        },
+        "install & build": {
+            "title": "Dckr: Initialize Codux",
+            "description": "Installs dependencies and builds Codux",
+            "run": [
+                "install",
+                "build"
+            ],
+            "trigger": [
+                "checkout",
+                "pull",
+                "setup"
+            ]
+        }
+    }
+}  
