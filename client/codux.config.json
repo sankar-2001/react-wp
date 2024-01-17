@@ -6,7 +6,7 @@
     "addPanel": {
         "assets": ["@codux-boards/react-blueprint"]
     },    
-    "boardGlobalSetup": "./src/_codux/boards/boards-global-setup.ts",
+    "boardGlobalSetup": "./src/_codux/boards-global-setup.ts",
     "scripts": {
         "install": {
             "title": "Dckr: Install",
