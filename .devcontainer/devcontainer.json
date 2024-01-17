@@ -16,7 +16,9 @@
 			// Add the IDs of extensions you want installed when the container is created.
 			"extensions": [
 				"mongodb.mongodb-vscode",
-				"dsznajder.es7-react-js-snippets"
+				"dsznajder.es7-react-js-snippets",
+				"bradlc.vscode-tailwindcss",
+				"esbenp.prettier-vscode"
 			]
 		}
 	},
