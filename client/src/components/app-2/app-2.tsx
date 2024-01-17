@@ -1,7 +1,9 @@
+import './app-2.css';
 import React from 'react';
 import { Input } from '../input/input';
 import { Label } from '../label/label';
 import { SubmitButton } from '../submit-button/submit-button';
+import Classnames from 'classnames';
 
 export interface App2Props {
     className?: string;
@@ -11,7 +13,7 @@ export interface App2Props {
 
 
 export const App2: React.FC<App2Props> = ({ className = '' }) => (
-    <div className={className}>
+    <div className="auth">
         <form>
             <Label htmlFor="name">Name </Label>
             <Input id={'name'} name={'name'} />

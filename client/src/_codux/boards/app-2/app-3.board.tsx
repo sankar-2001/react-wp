@@ -5,5 +5,6 @@ export default createBoard({
     name: 'App2',
     Board: () => <App2 />,
     isSnippet: true,
-    environmentProps: {}
+    environmentProps: {
+canvasBackgroundColor: '#ffffff'}
 });
