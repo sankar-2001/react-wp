@@ -7,7 +7,7 @@
         "assets": ["@codux-boards/react-blueprint"]
     },    
     "boardGlobalSetup": "./src/_codux/boards-global-setup.ts",
-    "tailwindcssConfig": "./tailwind.config.json",
+    "tailwindcssConfig": "./tailwind.config.js",
     "scripts": {
         "install": {
             "title": "Dckr: Install",
