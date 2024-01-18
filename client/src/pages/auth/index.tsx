@@ -1,4 +1,5 @@
-import React, { useContext, useState } from "react";
+// eslint-disable-next-line
+import React, { SyntheticEvent, useContext, useState } from "react";
 import axios from "axios";
 import { useCookies } from "react-cookie";
 import { useNavigate } from "react-router-dom";
@@ -15,6 +16,7 @@ export const AuthPage = () => {
 };
 
 const Login = () => {
+  // eslint-disable-next-line
   const [_, setCookies] = useCookies(["access_token"]);
 
   const [username, setUsername] = useState<string>("");
@@ -22,7 +24,7 @@ const Login = () => {
 
   const navigate = useNavigate();
 
-  const handleSubmit = async (event) => {
+  const handleSubmit = async (event: SyntheticEvent) => {
     event.preventDefault();
 
     try {
@@ -83,7 +85,7 @@ const Register = () => {
   const [username, setUsername] = useState("");
   const [password, setPassword] = useState("");
 
-  const handleSubmit = async (event) => {
+  const handleSubmit = async (event: SyntheticEvent) => {
     event.preventDefault();
     try {
       await axios.post("http://localhost:6500/user/register", {
@@ -92,7 +94,8 @@ const Register = () => {
       });
       alert("Registration Completed! Now login.");
     } catch (err) {
-      if (err.response.data.type === UserErrors.USERNAME_ALREADY_EXISTS) {
+      const response = err.response;
+      if (response.data.type === UserErrors.USERNAME_ALREADY_EXISTS) {
         alert("ERROR: Username exists");
       } else {
         alert("ERROR: Something went wrong");
