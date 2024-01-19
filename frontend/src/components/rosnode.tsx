@@ -99,7 +99,7 @@ export function RosNode() {
 
   return (
     <div>
-      <h1>Simple roslib Example this is adfjasdfdsaflsd</h1>
+      <h1>Simple roslib Example this is adfjasdfdsaflsd </h1>
       <p>Check your Web Console for output.</p>
     </div>
   );
