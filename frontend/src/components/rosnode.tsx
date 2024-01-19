@@ -5,7 +5,7 @@ export function RosNode() {
   // -----------------
 
   const ros = new ROSLIB.Ros({
-    url: 'ws://localhost:9090'
+    url: 'ws://172.28.0.2:9090'
   });
 
   ros.on('connection', () => {
