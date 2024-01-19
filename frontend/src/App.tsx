@@ -25,7 +25,7 @@ function App() {
   </div>
   </div>
 </ThemeProvider>
-  )
+  ) 
 }
 
 export default App
