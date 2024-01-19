@@ -4,19 +4,25 @@ function App() {
   return (  
  
 <ThemeProvider>
-  <div className="p-6 max-w-sm mx-auto bg-white rounded-xl shadow-lg flex items-center space-x-4 " >
-  
-    <div className="text-4xl text-gray-600">
-      <div className="text-xl font-medium text-black dark:text-white">ChitChat</div>
-      <p className="text-green-100 bg-orange-300 bg-gradient-to-r from-red-500 to-purple-600 p-4 items-center rounded-2xl drop-shadow-lg hover:text-green-400">You have a new message!</p>
+  <div >
+    <div className="theme-swiss relative bg-skin-fill max-w-4xl mx-auto overflow-hidden sm:rounded-2xl">
+    <img className="absolute inset-0 h-full w-full object-cover opacity-30" src="https://images.unsplash.com/photo-1613217784112-e0e197be6a0b?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1600&q=80&sat=-100" alt="People working on laptops" />
+    <div className="absolute inset-0 bg-gradient-to-br from-skin-hue via-skin-hue to-transparent opacity-90"></div>
+    <div className="relative max-w-2xl mx-auto text-center py-16 px-4 sm:py-20 sm:px-6 lg:px-8">
+      <h2 className="text-3xl font-extrabold text-skin-base sm:text-4xl">
+        <span className="block">Focus on your content.</span>
+        <span className="block">We handle the distribution.</span>
+      </h2>
+      <p className="mt-4 text-lg leading-6 text-skin-muted">Ac euismod vel sit maecenas id pellentesque eu sed consectetur. Malesuada adipiscing sagittis vel nulla nec.</p>
+      <div className="mt-10 max-w-sm mx-auto sm:max-w-none sm:flex sm:justify-center">
+        <div className="space-y-4 sm:space-y-0 sm:mx-auto sm:inline-grid sm:grid-cols-2 sm:gap-5">
+          <a href="#" className="text-skin-inverted bg-skin-button-accent hover:bg-skin-button-accent-hover flex items-center justify-center px-4 py-3 border border-transparent text-base font-medium rounded-md shadow-sm sm:px-8"> Get started </a>
+          <a href="#" className="text-skin-base bg-skin-button-muted flex items-center justify-center px-4 py-3 border border-transparent text-base font-medium rounded-md shadow-sm bg-opacity-60 hover:bg-opacity-70 sm:px-8"> Live demo </a>
+          <ModeToggle/>
+        </div>
+      </div>
     </div>
-    <div>
-  
-      <div className="rounded-lg bg-red-400 py-1 px-2 m-2">Thello</div>
-      <div className="rounded-lg bg-red-400 py-1 px-2 m-2">Thello</div>
-      <div className="rounded-lg bg-red-400 py-1 px-2 m-2">Thello</div>
-      <ModeToggle/>
-    </div>
+  </div>
   </div>
 </ThemeProvider>
   )
