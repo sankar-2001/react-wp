@@ -4,7 +4,7 @@ services:
   app:
     build: 
       context: .
-      dockerfile: Dockerfile
+      dockerfile: Dockerfile.node
     container_name: node-dev
     volumes:
       - ../..:/workspaces
@@ -13,7 +13,9 @@ services:
     command: sleep infinity
 
     # Runs app on the same network as the database container, allows "forwardPorts" in devcontainer.json function.
-    network_mode: service:db
+    network_mode: 
+      - service:db
+      - service:ros-core
 
     # Use "forwardPorts" in **devcontainer.json** to forward an app port locally. 
     # (Adding the "ports" property to this file will not forward from a Codespace.)
@@ -31,6 +33,13 @@ services:
 
     # Add "forwardPorts": ["27017"] to **devcontainer.json** to forward MongoDB locally.
     # (Adding the "ports" property to this file will not forward from a Codespace.)
+
+    ros-core:
+      build: 
+        context: .
+        dockerfile: Dockerfile.roscore
+      restart: unless-stopped
+      volumes: ros-core-data:/data/test
 
 volumes:
   mongodb-data:
