@@ -1,12 +1,15 @@
 import {BrowserRouter as Router, Routes, Route} from "react-router-dom";
 import { ThemeProvider } from "@/components/theme-provider"
-// import { ModeToggle } from "@/components/mode-toggle"
+import Topbar from "./scenes/global/Topbar";
+import Sidebar from "./scenes/global/Sidebar"
+
+
 function App() {
   return (  
  
 <ThemeProvider>
       <Router>
-        {/* <Navbar/> */}
+        <Topbar/>
         <Routes>
           <Route path="/" element={<h1>empty is this</h1>}/>
           {/* <Route path="/auth" element={<AuthPage/>} />
