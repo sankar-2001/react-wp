@@ -9,8 +9,8 @@
     "preview": "vite preview",
     "portf": "cross-env FRONTEND_PORT=9099",
     "portb": "cross-env BACKEND_PORT=8088",
-    "app": "cross-env RENDER_REACT_APP=1 vite",
-    "sandbox": "cross-env RENDER_REACT_APP=0 vite"
+    "app": "cross-env RENDER_REACT_APP=yes vite",
+    "sandbox": "cross-env RENDER_REACT_APP=no vite"
   },
   "dependencies": {
     "@emotion/react": "^11.11.3",
