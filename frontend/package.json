@@ -4,10 +4,13 @@
   "version": "0.0.0",
   "type": "module",
   "scripts": {
-    "dev": "vite",
     "build": "tsc && vite build",
     "lint": "eslint . --ext ts,tsx --report-unused-disable-directives --max-warnings 0",
-    "preview": "vite preview"
+    "preview": "vite preview",
+    "portf": "cross-env FRONTEND_PORT=9099",
+    "portb": "cross-env BACKEND_PORT=8088",
+    "app": "cross-env RENDER_REACT_APP=1 vite",
+    "sandbox": "cross-env RENDER_REACT_APP=0 vite"
   },
   "dependencies": {
     "@emotion/react": "^11.11.3",
