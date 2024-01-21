@@ -1,7 +1,7 @@
 import { ThemeProvider } from "@/components/theme-provider"
 // import { ModeToggle } from "@/components/mode-toggle"
 
-function ComponentSlate() {
+function Sandbox() {
   return (  
  
 <ThemeProvider>
@@ -10,4 +10,4 @@ function ComponentSlate() {
   )
 }
 
-export default ComponentSlate
+export default Sandbox
