@@ -1,0 +1,20 @@
+{
+	"name": "react-code",
+	"dockerComposeFile": ["../../docker-compose.yml"],
+	"service": "web-app",
+	"shutdownAction": "none",
+	"workspaceFolder": "/workspace/",
+	"customizations": {
+		"vscode": {
+			"extensions": [
+				"mongodb.mongodb-vscode",
+				"dsznajder.es7-react-js-snippets",
+				"bradlc.vscode-tailwindcss",
+				"esbenp.prettier-vscode"
+			]
+		}
+	}
+	// "features": {
+	// 	"ghcr.io/devcontainers-contrib/features/ts-node:1": {}
+	// }
+}
