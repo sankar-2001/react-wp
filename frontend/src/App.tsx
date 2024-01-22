@@ -11,8 +11,8 @@ function App() {
  
 <ThemeProvider>
         <Topbar/>
-        <MySidebar/>
-        <Dashboard/>  
+        <h1>from app</h1>
+       <Dashboard/>  
       <Router>
         <Routes>
           <Route path="/" element={<h1>empty is this</h1>}/>
