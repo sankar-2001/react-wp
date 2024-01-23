@@ -1,4 +1,4 @@
-FROM ros:humble-ros-core
+FROM ros:humble
 
 RUN apt-get update -y && \ 
     apt-get install -y ros-humble-rosbridge-server && \ 
