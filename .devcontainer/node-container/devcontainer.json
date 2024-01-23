@@ -10,7 +10,8 @@
 				"mongodb.mongodb-vscode",
 				"dsznajder.es7-react-js-snippets",
 				"bradlc.vscode-tailwindcss",
-				"esbenp.prettier-vscode"
+				"esbenp.prettier-vscode",
+				"ms-azuretools.vscode-docker"
 			]
 		}
 	}
