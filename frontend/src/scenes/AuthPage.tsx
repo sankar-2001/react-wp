@@ -1,7 +1,14 @@
-import React from 'react'
+import Register from '@/components/auth';
+import React, { ReactNode } from 'react';
 
-export default function AuthPage() {
+type AuthPageProps = {
+  children?: ReactNode;
+};
+
+export default function AuthPage({ children = <Register/> }: AuthPageProps) {
   return (
-    <div>AuthPage</div>
-  )
+    <div>
+      {children}
+    </div>
+  );
 }
