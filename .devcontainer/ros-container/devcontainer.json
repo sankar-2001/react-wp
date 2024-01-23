@@ -6,7 +6,7 @@
 	"dockerComposeFile": ["../../docker-compose.yml"],
 	"service": "ros",
 	"shutdownAction": "none",
-	"workspaceFolder": "/workspace/ros",
+	"workspaceFolder": "/workspace/",
 	"customizations": {
 		"vscode": {
 			"extensions": [
