@@ -1,13 +1,14 @@
 import { ThemeProvider } from "@/components/theme-provider"
 import { VideoNode } from "./components/videonode"
+import Joystick from "./components/joystick"
 // import { ModeToggle } from "@/components/mode-toggle"
+
 
 function Sandbox() {
   return (  
  
 <ThemeProvider>
-    <h1>from sandbox below is the video mode </h1>
-    <VideoNode/>
+  <Joystick/>
 </ThemeProvider>
   )
 }
