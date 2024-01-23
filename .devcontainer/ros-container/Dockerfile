@@ -1,7 +1,8 @@
 FROM ros:humble
 
-RUN apt-get update -y && \ 
-    apt-get install -y ros-humble-rosbridge-server && \ 
-    apt-get install -y git
+RUN apt-get update && apt-get upgrade -y
+RUN apt-get install -y python3-pip
+ENV SHELL /bin/bash
 
 
+CMD ["/bin/bash"]
