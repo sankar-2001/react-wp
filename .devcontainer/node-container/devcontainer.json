@@ -13,7 +13,11 @@
 				"esbenp.prettier-vscode",
 				"ms-azuretools.vscode-docker",
 				"Postman.postman-for-vscode",
-				"moalamri.inline-fold"
+				"moalamri.inline-fold",
+				"team-sapling.sapling",
+				"formulahendry.auto-rename-tag",
+				"formulahendry.auto-close-tag",
+				"planbcoding.vscode-react-refactor"
 			]
 		}
 	}
