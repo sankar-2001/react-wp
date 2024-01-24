@@ -5,7 +5,7 @@ import MySidebar from "./scenes/global/Sidebar"
 import Dashboard from "./scenes/Dashboard";
 import AuthPage from "./scenes/AuthPage";
 
-import Register from "./components/auth";
+import {Register} from "./components/auth";
 import { Login } from "./components/auth";
 
 function App() {
@@ -14,8 +14,8 @@ function App() {
 <ThemeProvider>
       <Router>
         <Routes>
-          <Route path="/login" element={<AuthPage><Login/></AuthPage>} />
           <Route path="/register" element={<AuthPage><Register/></AuthPage>} />
+          <Route path="/login" element={<AuthPage><Login/></AuthPage>} />
           <Route path="/" element={<MySidebar/>}/>
           <Route path="/dashboard" element={<Dashboard/>}/>
         </Routes>
@@ -23,5 +23,6 @@ function App() {
 </ThemeProvider>
   ) 
 }
+
 
 export default App

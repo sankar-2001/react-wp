@@ -1,4 +1,4 @@
-import Register from '@/components/auth';
+import { Register }from '@/components/auth';
 import React, { ReactNode } from 'react';
 
 type AuthPageProps = {

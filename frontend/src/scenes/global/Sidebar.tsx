@@ -25,7 +25,7 @@ const MySidebar = () => {
               <MenuItem className="menu1" icon={<MenuRoundedIcon />}>
                 <h2> ROBOTOAI</h2>
               </MenuItem>
-              <MenuItem icon={<GridViewRoundedIcon />}>dashboard</MenuItem>
+              <MenuItem icon={<GridViewRoundedIcon /> } >Dashboard</MenuItem>
               <SubMenu label="Insights" icon={<BarChartRoundedIcon />}>
                 <MenuItem icon={<TimelineRoundedIcon />}> Timeline Chart </MenuItem>
                 <MenuItem icon={<BubbleChartRoundedIcon />}>Bubble Chart</MenuItem>
