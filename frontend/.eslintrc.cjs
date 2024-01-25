@@ -14,5 +14,11 @@ module.exports = {
       'warn',
       { allowConstantExport: true },
     ],
+    'react/jsx-first-prop-new-line': [1, 'multiline'],
+        'react/jsx-max-props-per-line': [1,
+            {
+                'maximum': 1
+            }
+        ]
   },
 }
