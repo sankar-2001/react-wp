@@ -1,33 +1,29 @@
-import React from 'react'
-import { BrowserRouter as Router, Routes, Route, Link } from "react-router-dom";
+import React from "react";
+import {BrowserRouter, Route, Switch} from "react-router-dom";
+import Page1 from "./pages/Page-1";
+import Page2 from "./pages/Page-2";
+import Page3 from "./pages/Page-3";
+import Dashboard from "./pages/Dashboard";
+import NotFound from "./pages/NotFound";
+import Layout from "./components/Layout";
 
-export default function MyRoutes() {
-  return (
-    <Routes>
-    <Route
-      path="/register"
-      element={
-        <h1>asfsadfadsf</h1>
-      }
-    />
-    <Route
-      path="/login"
-      element={
-        <h1>loginmyself</h1>
-      }
-    />
-    <Route
-      path="/page-1"
-      element={
-        <h1 className='text-4xl'>page1</h1>
-      }
-    />
-    <Route
-      path="/page-2"
-      element={
-        <h1 className='text-4xl'>page2</h1>
-      }
-    />
-  </Routes>
-  )
+function Routes() {
+    return (
+        <BrowserRouter>
+            <Route render={(props)=>(
+                <Layout {...props}>
+                    <Switch>
+                        <Route path="/" exact component={Dashboard}/>
+                        <Route path="/dashboard" exact component={Dashboard}/>
+                        <Route path="/page-1" component={Page1}/>
+                        <Route path="/page-2" component={Page2}/>
+                        <Route path="/page-3" component={Page3}/>
+                        <Route component={NotFound}/>
+                    </Switch>
+                </Layout>
+            )}/>
+        </BrowserRouter>
+    )
 }
+
+export default Routes;
