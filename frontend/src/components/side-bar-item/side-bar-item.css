@@ -1,0 +1,32 @@
+/* styles.css */
+
+.sidebaritem {
+    padding: 16px 24px;
+    transition: all 0.25s ease-in-out;
+    background: #b15b00;
+    /* Set a default background color */
+    margin: 4px 12px;
+    border-radius: 4px;
+    color: #EAD3D3;
+}
+
+.sidebaritem p {
+    color: white;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.sidebaritem:hover {
+    cursor: pointer;
+}
+
+.sidebaritem:hover:not(:first-child) {
+    background: #c34a36;
+}
+
+/* Add the sticky properties */
+.stickySidebarItem {
+    position: sticky;
+    top: 0;
+    /* Additional styles for the sticky state if needed */
+}

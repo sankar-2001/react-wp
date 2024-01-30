@@ -1,0 +1,4 @@
+[submodule "ros/src"]
+	path = ros/src
+	url = https://github.com/RishikesavanRamesh/webrtc_ros.git
+	branch = develop-ros2
