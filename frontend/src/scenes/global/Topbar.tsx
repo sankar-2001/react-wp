@@ -1,7 +1,6 @@
 import React from 'react'
 import { Input } from "@/components/ui/input"
 import { CircleUserIcon, SettingsIcon } from "lucide-react"
-import { ModeToggle } from "@/components/mode-toggle"
 import { Bell, BellDot } from "lucide-react"
 
 export default function Topbar() {
