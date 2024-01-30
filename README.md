@@ -9,7 +9,7 @@
 2) Open in devcontainer,( press CTRL+ Shift+ p to open command pallete and search for dev container : rebuild and reopen in container and invoke it.)
 
 3) When you are inside the devcontainer, to run the project, 
-    i) in /workspaces/client run: **yarn install && yarn start** 
-    ii) in /workspaces/server run: **yarn install && yarn dev**
+    i) in /workspaces/backend run: **npm run dev** 
+    ii) in /workspaces/frontend run: **npm run dev**
 
 ** Report issues, if you have encountered any**
