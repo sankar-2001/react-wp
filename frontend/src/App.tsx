@@ -15,7 +15,7 @@ function App() {
       <Router>
         <div className="flex relative">
           <MySidebar />
-          <main>
+          <main className="w-full">
             <Topbar />
             <RobotCard robot_id={"hello"} />
             <RobotCard robot_id={"world"} />

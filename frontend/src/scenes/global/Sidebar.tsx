@@ -19,7 +19,7 @@ import { Cable, HelpCircle } from "lucide-react";
 
 const MySidebar = () => {
     return (
-        <div className="flex h-screen">
+        <div className="flex h-screen sticky top-0">
           <Sidebar className="app">
             <Menu>
               <MenuItem className="menu1" icon={<MenuRoundedIcon />}>
